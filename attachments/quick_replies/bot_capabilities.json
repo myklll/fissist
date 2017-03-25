@@ -1,0 +1,32 @@
+[
+    {
+        "content_type":"text",
+        "title":"Open an account",
+        "payload":"Open new account"
+    },
+    {
+        "content_type":"text",
+        "title":"Complaints",
+        "payload":"Open new account"
+    },
+    {
+        "content_type":"text",
+        "title":"Transfer Money",
+        "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN"
+    },
+    {
+        "content_type":"text",
+        "title":"Buy airtime",
+        "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN"
+    },
+    {
+        "content_type":"text",
+        "title":"Service enquiries",
+        "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN"
+    },
+    {
+        "content_type":"text",
+        "title":"Loyalty Points",
+        "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN"
+    }
+]
