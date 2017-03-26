@@ -3,6 +3,6 @@ applications:
   memory: 256M
   instances: 1
   domain: mybluemix.net
-  name: fintech-bot
-  host: fintech-bot
+  name: fissist
+  host: fissist
   disk_quota: 1024M
