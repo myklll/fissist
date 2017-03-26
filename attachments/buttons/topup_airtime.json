@@ -1,0 +1,12 @@
+[
+    {
+        "type": "postback",
+        "title": "Pay Airtime",
+        "payload": "Pay Airtime"
+    },
+    {
+        "type": "postback",
+        "title": "Cancel Transaction",
+        "payload": "Cancel Transaction"
+    }
+]  

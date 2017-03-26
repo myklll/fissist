@@ -1,0 +1,17 @@
+[
+    {
+        "content_type":"text",
+        "title":"Yes Go ahead",
+        "payload":"Open account"
+    },
+    {
+        "content_type":"text",
+        "title":"Naah Cancel purchase",
+        "payload":"Naah not now"
+    },
+    {
+        "content_type":"text",
+        "title":"Change Number",
+        "payload":"Naah not now"
+    }
+]

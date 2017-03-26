@@ -12,21 +12,21 @@
     {
         "content_type":"text",
         "title":"Transfer Money",
-        "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN"
+        "payload":"Transfer Money"
     },
     {
         "content_type":"text",
         "title":"Buy airtime",
-        "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN"
+        "payload":"Buy airtime"
     },
     {
         "content_type":"text",
         "title":"Service enquiries",
-        "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN"
+        "payload":"Make Enquiries"
     },
     {
         "content_type":"text",
         "title":"Loyalty Points",
-        "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN"
+        "payload":"Find out about loyalty points"
     }
 ]

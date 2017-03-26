@@ -1,0 +1,12 @@
+[
+    {
+        "content_type":"text",
+        "title":"Open account",
+        "payload":"Open account"
+    },
+    {
+        "content_type":"text",
+        "title":"Naah not now",
+        "payload":"Naah not now"
+    }
+]
