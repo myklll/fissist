@@ -14,8 +14,10 @@
     "dotenv": "^2.0.0",
     "ejs": "^2.5.5",
     "express": "^4.13.4",
+    "flutterwave": "^2.2.3",
     "node-localstorage": "^1.3.0",
     "request": "^2.81.0",
+    "sequence": "^3.0.0",
     "watson-developer-cloud": "^2.14.5"
   }
 }
