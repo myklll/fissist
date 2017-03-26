@@ -39,13 +39,20 @@ controller.on('facebook_optin', function(bot, message) {
     bot.reply(message, message.watsonData.output.text.join('\n'));
 });
 
-controller.hears('(.*)', 'message_received', function(bot, message) {
+localStorage.clear();
+
+controller.hears('(.*)', 'message_received', function(bot, msg) {
     //if(message.watsonData.output.text.length > 1) {
     // for(var i = 0; i < message.watsonData.output.text.length; i++) {
     //   bot.reply(message, message.watsonData.output.text[i]);
     // }
 
     //check if username is set, set it if not set else fetch it and set it as a watson variable
+
+    
+    //console.log(typeof(message.watsonData.context))
+
+    var message = JSON.parse(msg)
     
     if(localStorage.getItem("user_first_name") == undefined || localStorage.getItem("user_first_name") == null) {
         var user_details = get_user_details(message.user, function(err, res) {
@@ -56,13 +63,13 @@ controller.hears('(.*)', 'message_received', function(bot, message) {
             }
         });
     } else {
-        message.watsonData.context.first_name = localStorage.getItem("user_first_name");
-        message.watsonData.context.last_name = localStorage.getItem("user_last_name");
-        message.watsonData.context.gender = localStorage.getItem("user_gender");
+        // message.watsonData.context.first_name = localStorage.getItem("user_first_name");
+        // message.watsonData.context.last_name = localStorage.getItem("user_last_name");
+        // message.watsonData.context.gender = localStorage.getItem("user_gender");
     }
 
-    console.log(message.watsonData.context.first_name);
-    console.log(message.watsonData.context);
+    //console.log(message.watsonData.context.first_name);
+    //console.log(message.watsonData.context);
 
 
     if(message.watsonData.output.payload !== undefined) {

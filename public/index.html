@@ -1,26 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="page-home">
 
-  <head>
-    <title>NodeJS Starter Application</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheets/style.css">
-  </head>
+<head>
+    <!-- Twitter-->
 
-  <body>
-    <table>
-      <tr>
-        <td style= "width:30%;">
-          <img class = "newappIcon" src="images/newapp-icon.png">
-        </td>
-        <td>
-          <h1 id="message">Hello World!</h1>
-          <p class='description'></p> Thanks for creating a <span class = "blue">NodeJS Starter Application</span>.
-        </td>
-      </tr>
-    </table>
-  </body>
+  
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+   
+    <meta name="theme-color" content="#ffffff">
+    <title>Fissist</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://cloud.typography.com/7834932/650606/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link href="stylesheets/animate.css" rel="stylesheet">
+    <link href="stylesheets/app.css" rel="stylesheet">
+    <link href="stylesheets/contact-form.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/codemirror/4.7.0/codemirror.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/codemirror/4.7.0/theme/neo.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.css">
+    <link rel="stylesheet" href="budicon/cheatsheet/css/budicon.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+
+<body>
+    <div class="gradient"></div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><span class="symbol"><img src="images/symbol.svg"></span><span class="logotype"><img src="images/logotype.svg"></span></a></div>
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+              
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="login"><a>Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="banner">
+            <div class="container">
+                <div class="header">
+                    <h2>Your intelligent financial assistant.</h2>
+                    <p>Chat with <span style="color:#7ECB2A">fissist</span> to manage money, track expenses, and make payments all from whichever messaging app you like best - Facebook Messenger, SMS, or Slack</p>
+                    <div class="clearfix"><a target="_blank" href="https://m.me/1251862828254928" class="btn btn-success btn-lg">Try it Now!</a></div>
+                </div>
+                <!--div class="row">
+                    <div class="col-sm-4">
+                        <img src="http://kasisto.com/wp-content/uploads/2016/05/MyKAI-HeresWhat-1.png"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="http://kasisto.com/wp-content/uploads/2016/05/MyKAI-HeresWhat2-1.png"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="http://kasisto.com/wp-content/uploads/2016/05/MyKAI-HeresWhat3-1.png"/>
+                    </div>
+                </div-->
+            </div>
+        </div>
+        <div class="features-list">
+            <div class="container">
+            <h3>Hi, I am <span style="color:#7ECB2A">fissist</span>, let me introduce myself,</h3>
+                <div class="row">
+                    <div class="col-sm-4"><i class="bi_interface-window"></i>
+                        <h4>Conversation AI</h4>
+                        <p>I'm built with the latest intelligence technology, I'm not your average financial bot</p>
+                    </div>
+                    <div class="col-sm-4"><i class="bi_user-lock"></i>
+                        <h4>Safe & Secure</h4>
+                        <p>I'm as safe as your bank's mobile app and take your privacy seriously.</p>
+                    </div>
+                    <div class="col-sm-4"><i class="bi_time-clock-a"></i>
+                        <h4>Available Anytime</h4>
+                        <p>Text me as you would a friend. Plain English is best.Anytime from facebook messenger or Slack</p>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top:20px">
+                    <div class="col-sm-4"><i class="bi_interface-window"></i>
+                        <h4>Bill Payments</h4>
+                        <p>I can help with your DSTV, GoTV, and even your electricity bills</p>
+                    </div>
+                    <div class="col-sm-4"><i class="bi_user-lock"></i>
+                        <h4>Airtime Purchase</h4>
+                        <p>I can help you top up your phone or any other phone in Nigeria</p>
+                    </div>
+                    <div class="col-sm-4"><i class="bi_time-clock-a"></i>
+                        <h4>Funds Transfer</h4>
+                        <p>I can help you send money to anyone, anytime. </p>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top:20px">
+                    <div class="col-sm-4"><i class="bi_interface-window"></i>
+                        <h4>Make Enquiries</h4>
+                        <p>No need to wait endlessly on the phone to speak to a customer agent, I can help with some basic needs.I know the Current exchange rate, </p>
+                    </div>
+                    <div class="col-sm-4"><i class="bi_user-lock"></i>
+                        <h4>Open an Account </h4>
+                        <p>It's 2017, I can set up a new bank account for you in minutes, just make</p>
+                    </div>
+                    <div class="col-sm-4"><i class="bi_time-clock-a"></i>
+                        <h4>Submit complaints</h4>
+                        <p>Did you misplace your card? I can help you block your card</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="blog-post">
+                <!--div class="col-sm-5"><img src="images/banner-slack.png"></div-->
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10"><strong><span style="color:#7ECB2A">fissist</span> is currently available on Facebook messenger, Slack, and Text messages.</strong>
+                <a href="slack.html"><i class="bi_logo-facebook"></i>Launch on Messenger</a>
+                <a href="slack.html"><i class="bi_doc-article-a"></i>Launch on Slack</a>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5"><span>&nbsp;&copy; 2017 collectivE. All Rights Reserved.</span></div>
+                <div class="col-sm-7">
+                    <ul class="clearfix">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#" class="contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 
 </html>
