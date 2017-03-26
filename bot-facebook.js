@@ -7,6 +7,11 @@
  *
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 var Botkit = require('botkit');
@@ -102,13 +107,15 @@ controller.hears('(.*)', 'message_received', function(bot, message) {
 
               output_message.text =  message.watsonData.output.text.join('\n');
               output_message.buttons = buttons;
-              
-              var output_mesage =  {
-                  'type': 'template',
-                  'payload': {
-                      'template_type': 'button',
-                      'text': "Complete your purchase",
-                      'buttons': [
+            
+
+              var output_message = {
+                "attachment":{
+                  "type":"template",
+                  "payload":{
+                    "template_type":"button",
+                    "text":"Great!! Complete your purchase :)",
+                    'buttons': [
                           {
                               "type": "postback",
                               "title": "Pay Airtime",
@@ -121,9 +128,10 @@ controller.hears('(.*)', 'message_received', function(bot, message) {
                           }
                       ] 
                   }
+                }
               }
-              output_mesage.atachment = output_mesage;
-              
+              //output_mesage.attachment = output_mesage;
+
               bot.reply(message, output_message);
           }
           else if(payload_type == "quick_replies") {
