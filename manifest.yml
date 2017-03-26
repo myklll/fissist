@@ -2,7 +2,7 @@ applications:
 - path: .
   memory: 256M
   instances: 1
-  domain: mybluemix.net
+  domain: eu-gb.mybluemix.net
   name: fissist
   host: fissist
   disk_quota: 1024M
